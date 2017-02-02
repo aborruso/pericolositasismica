@@ -1,0 +1,24 @@
+<GDAL_WMS> 
+    <Service name="WMS"> 
+	<Version>1.1.1</Version> 
+	<Transparent>TRUE</Transparent>
+	<ServerUrl>http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/WMS_v1.3/Vettoriali/Pericolosita_sismica_002.map</ServerUrl> 
+	<SRS>EPSG:4326</SRS> 
+        <ImageFormat>image/png</ImageFormat> 
+        <Layers>RN.PERICOLOSITA_SISMICA_002GRADI</Layers> 
+        <Styles></Styles> 
+    </Service> 
+    <DataWindow> 
+        <UpperLeftX>6</UpperLeftX> 
+        <UpperLeftY>49</UpperLeftY> 
+        <LowerRightX>18.92</LowerRightX> 
+        <LowerRightY>34.5</LowerRightY> 
+        <SizeX>19380</SizeX> 
+        <SizeY>21750</SizeY> 
+    </DataWindow> 
+    <Timeout>3000</Timeout>
+	<MaxConnections>1</MaxConnections>
+    <Projection>EPSG:4326</Projection>
+	<BandsCount>4</BandsCount>
+</GDAL_WMS>
+	
