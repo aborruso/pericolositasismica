@@ -1,7 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-        <html xmlns="http://www.w3.org/1999/xhtml"
+<!DOCTYPE html>
+        <html>
           <head>
             <title>Pericolosità sismica di riferimento a passo 0,02 gradi</title>
+            <meta charset="utf-8" />
             <meta http-equiv='imagetoolbar' content='no'/>
             <style type="text/css"> v\:* {behavior:url(#default#VML);}
                 html, body { overflow: hidden; padding: 0; height: 100%; width: 100%; font-family: 'Lucida Grande',Geneva,Arial,Verdana,sans-serif; }
@@ -33,26 +34,7 @@
                   map = new OpenLayers.Map(options);
 
                   // Create Google Mercator layers
-                  var gmap = new OpenLayers.Layer.Google("Google Streets",
-                  {
-                      type: google.maps.MapTypeId.ROADMAP,
-                      sphericalMercator: true
-                  });
-                  var gsat = new OpenLayers.Layer.Google("Google Satellite",
-                  {
-                      type: google.maps.MapTypeId.SATELLITE,
-                      sphericalMercator: true
-                  });
-                  var ghyb = new OpenLayers.Layer.Google("Google Hybrid",
-                  {
-                      type: google.maps.MapTypeId.HYBRID,
-                      sphericalMercator: true
-                  });
-                  var gter = new OpenLayers.Layer.Google("Google Terrain",
-                  {
-                      type: google.maps.MapTypeId.TERRAIN,
-                      sphericalMercator: true
-                  });
+                 
 
                   // Create Bing layers
                   var broad = new OpenLayers.Layer.Bing({
